@@ -1,13 +1,160 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro{
+  
+  margin-right: 10rem;
+  margin-top: -3rem;
+  width: 35rem;
+}
+
+img{
+  height: 28em;
+  width: 20rem;
+  margin-top: -15rem;
+  margin-bottom: -13rem;
+  margin-left: -1.8em;
+}
+
+.description{
+  font-size: 30px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 25em;
+  height: 22em;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(55, 99, 180, 0.3);
+  padding: 1em;
+  margin-left: -5rem;
+  margin-top: 3rem;
+}
+
+input{
+  height: 4.5em;
+  width: 28.5em;
+  margin-bottom: 1.2em;
+  border: 1px solid rgb(207, 205, 205);
+  border-radius: 7px;
+  padding-left: 1.5em;
+}
+
+input:focus{
+  outline-color: rgb(31, 123, 243);
+}
+
+input::placeholder{
+  color: rgb(161, 160, 160);
+  font-size: 20px;
+}
+
+.loginBtn{
+  background-color: rgb(31, 123, 243);
+  color: whitesmoke;
+  font-size: 10px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  font-size: 25px;
+  width: 16.2em;
+  height: 2.3em;
+  border: none;
+}
+
+.forgot{
+  color :rgb(62, 138, 238);
+  font-size: 18px;
+  margin: 1.5em 0;
+}
+
+.lineDiv{
+  height: 1px;
+  width: 24.5em;
+  background-color: rgb(207, 205, 205);
+}
+
+.createBtn{
+  font-size: 20px;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  background-color: rgb(35, 187, 35);
+  color: whitesmoke;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  height: 3.5em;
+  width: 10.5em;
+}
+
+.createBtn:hover{
+  filter: brightness(85%);
+}
+
+.extra{
+  margin-top: 2rem;
+  margin-left: -1.8rem;
+  font-size: 15px;
+}
+
+span{
+  font-weight: bold;
+}
+
+@media screen and (max-width : 425px){
+  body{
+    overflow: none;
+  }
+  
+  .App{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0.5rem;
+    padding-top: 15rem;
+    padding-left: 11rem;
+    padding-right: 1rem;
+  }
+
+  .intro{
+    margin-left: 2rem;
+    width: 22rem;
+  }
+  
+  form{
+    width: 20rem;
+    margin-left: -10rem;
+    margin-top: -0.1rem;
+  }
+
+  input{
+    width: 22em;
+  }
+
+  .loginBtn{
+    width: 12.7em;
+  }
+
+  .lineDiv{
+    width: 19.5em;
+  }
+
+  .extra{
+    margin-left: -9rem;
+  }
 }
